@@ -1,4 +1,15 @@
-compiler: rule.y compiler.l
-	/home/boza/bison/bin/bison -d -v rule.y
-	./flex compiler.l
-	gcc -std=c99 -o compiler rule.tab.c lex.yy.c libfl.a 
+all: compiler test_compiler
+
+compiler.lex: compiler.l
+	flex compiler.l
+
+compiler.tab.c: compiler.y
+	bison -d -v rule.y
+	yacc -f rule.y
+
+compiler: compiler.tab.c compiler.lex
+	cc -std=c99 -o compiler lex.yy.c y.tab.c -ll -ly
+
+test_compiler: compiler
+	./compiler < fakeC
+

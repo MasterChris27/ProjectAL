@@ -6,38 +6,38 @@
 %%
 
 int		return tINT;
-string	return tSTRING;
+string		return tSTRING;
 "{"		return tACO;
 "}"		return tACC;
-const	return tCONST;
+const		return tCONST;
 "+"		return tADD;
 "-"		return tSUBTRACT;
 "/"		return tDIVIDE;
 "*"		return tMULTIPLY;
 "="		return tEQUAL;
-">"     return tCHECKHIGHER;
-"=="	return tCHECKEQ;
+">"    		return tCHECKHIGHER;
+"=="		return tCHECKEQ;
 "("		return tPO;
 ")"		return tPC;
 [ \t\n] ;
 ","		return tVIRGULE;
 "$"		return tDOLLAR;
 ";"		return tFINSTR;
-if		return tIF;
-else	return tELSE;
-while	return tWHILE;
-for		return tFOR;
-"++"	return tPLUSPLUS;
-"--"	return tMINUSMINUS;
+"daca"		return tIF;
+"altfel"	return tELSE;
+"catTimp"	return tWHILE;
+"pentru"	return tFOR;
+"++"		return tPLUSPLUS;
+"--"		return tMINUSMINUS;
 
-"<" 	return tLESS;
-"<=" 	return tLESSEQUAL;
-">="	return tMOREEQUAL;
+"<" 		return tLESS;
+"<=" 		return tLESSEQUAL;
+">="		return tMOREEQUAL;
 
 
-"-="	return tMINUSEQUAL;
-"+="	return tPLUSEQUAL;
-"return"  return tRETURN;
+"-="		return tMINUSEQUAL;
+"+="		return tPLUSEQUAL;
+"intoarce"	return tRETURN;
 
 
 

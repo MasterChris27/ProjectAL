@@ -41,22 +41,15 @@ for(int i=0;i<=indexInst;i++){
 	} else if(strcmp(instr[i].operation, "SUB") == 0){
 		fprintf(f, "instr_mem(%d)<=x\"01%02x%04x\" ;\n",i,instr[i].a , instr[i].b);
 
-
 	} else if(strcmp(instr[i].operation, "MUL") == 0){
 		fprintf(f, "instr_mem(%d)<=x\"02%02x%04x\" ;\n",i,instr[i].a , instr[i].b);
 
-
 	} else if(strcmp(instr[i].operation, "DIV") == 0){
-		fprintf(f, "instr_mem(%d)<=x\"03%02x%04x\" ;\n",i,i,instr[i].a , instr[i].b);
-
-	
+		fprintf(f, "instr_mem(%d)<=x\"03%02x%04x\" ;\n",i,instr[i].a , instr[i].b);
 
 	} else if(strcmp(instr[i].operation, "STORE") == 0){ 
 		fprintf(f, "instr_mem(%d)<=x\"04%02x%04x\" ;\n",i,instr[i].a , instr[i].b);
 	
-
-
-
 	} else if(strcmp(instr[i].operation, "LOAD") == 0){
 		fprintf(f, "instr_mem(%d)<=x\"05%02x%04x\" ;\n",i,instr[i].a , instr[i].b);
 
@@ -117,9 +110,9 @@ fclose(f);
 void printAllInst(){
 	int i=0;
 	while(i<indexInst){
-	printf("%d  -> ",i);
-	printInst(i);
-	i++;
+		printf("%d  -> ",i);
+		printInst(i);
+		i++;
 	}	
 
 }
@@ -161,7 +154,7 @@ void printInst(int Index){
 void execute_all_instructions(){
 
 	for(currentInst; currentInst<indexInst; currentInst++){
-	instructionExecute(currentInst);
+		instructionExecute(currentInst);
 	}
 
 }

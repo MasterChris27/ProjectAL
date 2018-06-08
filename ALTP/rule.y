@@ -660,17 +660,10 @@ void yyerror(char *s) {
 
 int main() {
 
-	//#if YYDEBUG
-	//	yydebug = 1;
-//	#endif
-
-
-
-
-	yyparse();
+	printf(yyparse());
 
 	printf("\n\n                 Setting up instructions          \n\n\n");
-	printAllInst();
+	//printAllInst();
 	printf("\n\n                   Instructions ready          \n\n\n");
 	printf("\n\n----------------------------------------------------------  \n\n");
 	printf("\n\n                   Starting execution           \n\n\n");
