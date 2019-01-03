@@ -68,7 +68,7 @@
 	#include "table.c"
 	#include "interpreteur.c"
 	
-	#define YYDEBUG 0
+	#define YYDEBUG 1
 	
 	int yylex(void);
 	void yyerror(char*);
@@ -2338,8 +2338,12 @@ void yyerror(char *s) {
 }
 
 int main() {
+	
+	//#if YYDEBUG
+	//	yydebug = 1;
+	//#endif
 
-	printf(yyparse());
+	yyparse();
 
 	printf("\n\n                 Setting up instructions          \n\n\n");
 	//printAllInst();
@@ -2355,6 +2359,7 @@ int main() {
 
 		printf("var: %s, value: %d\n", get_variable_name(i), get_memory_value(i));
 	}
+	
 }
 
 
