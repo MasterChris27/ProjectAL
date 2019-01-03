@@ -23,10 +23,10 @@ const	return tCONST;
 ","		return tVIRGULE;
 "$"		return tDOLLAR;
 ";"		return tFINSTR;
-if		return tIF;
-else	return tELSE;
-while	return tWHILE;
-for		return tFOR;
+daca		return tIF;
+altfel	return tELSE;
+cat	return tWHILE;
+pentru		return tFOR;
 "++"	return tPLUSPLUS;
 "--"	return tMINUSMINUS;
 
@@ -37,7 +37,7 @@ for		return tFOR;
 
 "-="	return tMINUSEQUAL;
 "+="	return tPLUSEQUAL;
-"return"  return tRETURN;
+"intoarce"  return tRETURN;
 
 
 

@@ -65,10 +65,6 @@ if(name!=NULL){   // if var is not temp
   return 1;
 }
 
-
-
-
-
 void symbol_initialise(int index) {
 entry* current = tab_symbols;
 

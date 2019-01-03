@@ -1,6 +1,6 @@
 
 
-Someties tokens are not added automaticly so we need to add them in compiler.l, rule.y and y.tab.h
+Sometimes tokens are not added automaticly so we need to add them in compiler.l, rule.y and y.tab.h
 
 
 lex compiler.l
